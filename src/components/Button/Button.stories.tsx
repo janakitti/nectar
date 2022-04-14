@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Button from './Button';
 
 export default {
-  title: 'ReactComponentLibrary/Button',
+  title: 'Nectar/Button',
   component: Button,
 } as ComponentMeta<typeof Button>;
 
