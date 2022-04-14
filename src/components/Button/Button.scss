@@ -1,19 +1,53 @@
-button {
-  background-color: $primary-0;
+.button {
   border-radius: 999em;
-  border-width: 0;
   padding: 0.5em 1em;
-  color: #ffffff;
   font-size: 16px;
   transition: $transition-hover;
-}
 
-button:hover {
-  background-color: $primary-1;
-  transition: $transition-hover;
-}
+  &.primary {
+    background-color: $primary-0;
+    color: #ffffff;
+    border: {
+      width: 0;
+    }
 
-button:disabled {
-  background-color: $light-1;
-  transition: $transition-hover;
+    &:hover {
+      background-color: $primary-1;
+      transition: $transition-hover;
+    }
+
+    &:disabled {
+      background-color: $light-1;
+      transition: $transition-hover;
+    }
+  }
+
+  &.secondary {
+    background-color: $light-0;
+    padding: calc(0.5em - $border-width-0) calc(1em - $border-width-0);
+    border: {
+      color: $primary-0;
+      style: solid;
+      width: $border-width-0;
+    }
+    color: $primary-0;
+
+    &:hover {
+      background-color: $light-1;
+      transition: $transition-hover;
+    }
+
+    &:disabled {
+      background-color: $light-0;
+      border: {
+        color: $light-1;
+      }
+      color: $light-2;
+      transition: $transition-hover;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Button from './Button';
+import { Level } from '../../shared/PropTypes';
 
 export default {
   title: 'Nectar/Button',
@@ -9,12 +10,14 @@ export default {
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
-export const HelloWorld = Template.bind({});
-HelloWorld.args = {
-  label: 'Test Label',
+export const ButtonPrimary = Template.bind({});
+ButtonPrimary.args = {
+  label: 'Primary',
+  type: Level.primary,
 };
 
-export const ClickMe = Template.bind({});
-ClickMe.args = {
-  label: 'Click',
+export const ButtonSecondary = Template.bind({});
+ButtonSecondary.args = {
+  label: 'Secondary',
+  type: Level.secondary,
 };
