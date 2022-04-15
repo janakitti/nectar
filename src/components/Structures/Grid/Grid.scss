@@ -1,0 +1,27 @@
+.grid {
+  display: flex;
+
+  &.dirRight {
+    flex-direction: row;
+  }
+
+  &.dirDown {
+    flex-direction: column;
+  }
+
+  &.dirLeft {
+    flex-direction: row-reverse;
+  }
+
+  &.dirUp {
+    flex-direction: column-reverse;
+  }
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+
+  & > div {
+    margin: $padding-0;
+  }
+}
