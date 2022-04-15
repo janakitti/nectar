@@ -1,0 +1,10 @@
+.vsplit-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.vsplit-section {
+  height: 100%;
+  padding: $padding-0;
+}
