@@ -26,7 +26,11 @@ const Grid = (props: Grid) => {
   })();
 
   return (
-    <div className={`grid ${dirClass} ${props.isWrapped ? 'wrap' : null}`}>{props.children}</div>
+    <div
+      className={`grid ${dirClass} ${props.isWrapped == null || props.isWrapped ? 'wrap' : null}`}
+    >
+      {props.children}
+    </div>
   );
 };
 
