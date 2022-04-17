@@ -1,0 +1,18 @@
+.textField {
+  background-color: $light-0;
+  border: {
+    width: 0.15em;
+    color: $light-2;
+    radius: $border-radius;
+    style: solid;
+  }
+  color: $light-2;
+  font: {
+    font-family: Poppins;
+  }
+  padding: $padding-fields;
+
+  &:focus {
+    outline-color: $light-2;
+  }
+}

@@ -8,7 +8,7 @@ import Card from '../components/Containers/Card/Card';
 import Header1 from '../components/Copy/Header1';
 
 export default {
-  title: 'Nectar/COmposites/CardLayout',
+  title: 'Nectar/Composites/CardLayout',
   component: Button,
 } as ComponentMeta<typeof Button>;
 
