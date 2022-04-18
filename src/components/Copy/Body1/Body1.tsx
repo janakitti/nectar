@@ -13,7 +13,7 @@ export interface IBody1Props {
 const Body1 = (props: IBody1Props) => {
   return (
     <Paddable top={props.pt} right={props.pr} bottom={props.pb} left={props.pl}>
-      <h1 className="body1">{props.children}</h1>
+      <p className="body1">{props.children}</p>
     </Paddable>
   );
 };
