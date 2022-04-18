@@ -2,10 +2,11 @@ import React from 'react';
 import '../../../styles/main.scss';
 
 export interface IVSplit {
+  children: React.ReactNode;
   pSplit?: number;
   fLeft?: number;
   fRight?: number;
-  children: React.ReactNode;
+  bgColor?: string;
 }
 
 const VSplit = (props: IVSplit) => {
@@ -39,10 +40,16 @@ const VSplit = (props: IVSplit) => {
 
   return (
     <div className="vsplit-container">
-      <div className="vsplit-section vsplit-left" style={leftArgs}>
+      <div
+        className="vsplit-section vsplit-left"
+        style={{ ...leftArgs, backgroundColor: props.bgColor }}
+      >
         {React.Children.toArray(props.children)[0]}
       </div>
-      <div className="vsplit-section vsplit-right" style={rightArgs}>
+      <div
+        className="vsplit-section vsplit-right"
+        style={{ ...rightArgs, backgroundColor: props.bgColor }}
+      >
         {React.Children.toArray(props.children)[1]}
       </div>
     </div>
