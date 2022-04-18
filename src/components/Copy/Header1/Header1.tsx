@@ -6,7 +6,7 @@ export interface IHeader1Props {
 }
 
 const Header1 = (props: IHeader1Props) => {
-  return <h1 className="header1">{props.children}</h1>;
+  return <span className="header1">{props.children}</span>;
 };
 
 export default Header1;
