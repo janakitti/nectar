@@ -12,7 +12,7 @@ const TextField = (props: ITextFieldProps) => {
   return (
     <input
       className="textField"
-      type={''}
+      type={props.type}
       defaultValue={props.defaultValue}
       placeholder={props.placeholder}
     />
