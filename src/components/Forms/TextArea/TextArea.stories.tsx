@@ -11,6 +11,5 @@ const Template: ComponentStory<typeof TextArea> = (args) => <TextArea {...args} 
 
 export const TextArea1 = Template.bind({});
 TextArea1.args = {
-  type: 'text',
   placeholder: 'Enter text',
 };
