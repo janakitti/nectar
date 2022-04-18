@@ -21,8 +21,8 @@ const Template: ComponentStory<typeof Button> = (args) => (
       <div style={{ backgroundColor: '#eeeeee' }}></div>
       <VSplit fRight={10}>
         <VContainer>
-          <Header1>Form</Header1>
-          <TextField type="text" label="" placeholder="Enter text"></TextField>
+          <Header1 pb={1}>Form</Header1>
+          <TextField type="text" label="" placeholder="Enter text" pb={1}></TextField>
           <TextArea placeholder="Enter body"></TextArea>
         </VContainer>
         <div style={{ backgroundColor: '#eeeeee' }}></div>
