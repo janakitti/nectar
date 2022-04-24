@@ -4,7 +4,7 @@ import Button from './Button';
 import { Level } from '../../shared/PropTypes';
 
 export default {
-  title: 'Nectar/Button',
+  title: 'Nectar/Forms/Button',
   component: Button,
 } as ComponentMeta<typeof Button>;
 
