@@ -18,15 +18,15 @@
     "@rollup/plugin-commonjs": "^21.0.3",
     "@rollup/plugin-node-resolve": "^13.2.0",
     "@rollup/plugin-typescript": "^8.3.2",
-    "@storybook/addon-actions": "^6.4.21",
-    "@storybook/addon-essentials": "^6.4.21",
-    "@storybook/addon-interactions": "^6.4.21",
-    "@storybook/addon-links": "^6.4.21",
-    "@storybook/builder-webpack5": "^6.4.21",
-    "@storybook/manager-webpack5": "^6.4.21",
+    "@storybook/addon-actions": "^6.5.0-alpha.64",
+    "@storybook/addon-essentials": "^6.5.0-alpha.64",
+    "@storybook/addon-interactions": "^6.5.0-alpha.64",
+    "@storybook/addon-links": "^6.5.0-alpha.64",
+    "@storybook/builder-webpack5": "^6.5.0-alpha.64",
+    "@storybook/manager-webpack5": "^6.5.0-alpha.64",
     "@storybook/preset-scss": "^1.0.3",
-    "@storybook/react": "^6.4.21",
-    "@storybook/testing-library": "^0.0.9",
+    "@storybook/react": "^6.5.0-alpha.64",
+    "@storybook/testing-library": "^0.0.11",
     "@types/jest": "^27.4.1",
     "babel-jest": "^27.5.1",
     "babel-loader": "^8.2.4",
@@ -62,8 +62,9 @@
     "registry": "https://npm.pkg.github.com/janakitti"
   },
   "dependencies": {
-    "@testing-library/react": "^12.1.5",
+    "@mdx-js/react": "^2.1.1",
+    "@testing-library/react": "^13.1.1",
     "@types/react": "^18.0.4",
-    "react": "^17.0.2"
+    "react": "^18.0.0"
   }
 }
