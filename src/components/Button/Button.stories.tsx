@@ -2,7 +2,6 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Button from './Button';
 import { Level } from '../../shared/PropTypes';
-import { ThemeProvider } from 'styled-components';
 import ThemeContext from '../Utility/ThemeContext';
 
 export default {

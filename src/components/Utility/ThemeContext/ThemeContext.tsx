@@ -1,6 +1,5 @@
 import React from 'react';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
-import { ITheme } from '../../../shared/PropTypes';
 
 export interface IThemeContextProps {
   theme: DefaultTheme;
