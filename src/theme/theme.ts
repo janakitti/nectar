@@ -20,7 +20,7 @@ export const defaultTheme: DefaultTheme = {
       vOffset: 4,
       blur: 20,
       spread: 0,
-      color: '#000000',
+      opacity: 0.15,
     },
   },
   transitions: {

@@ -35,7 +35,7 @@ export interface IThemeContainers {
     vOffset: number;
     blur: number;
     spread: number;
-    color: string;
+    opacity: number;
   };
   padding?: number;
   fieldPadding?: number;
