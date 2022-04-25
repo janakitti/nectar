@@ -1,5 +1,6 @@
 import React from 'react';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
+import { defaultTheme } from '../../../theme/theme';
 
 export interface IThemeContextProps {
   theme: DefaultTheme;
@@ -7,7 +8,10 @@ export interface IThemeContextProps {
 }
 
 const ThemeContext = (props: IThemeContextProps) => {
-  return <ThemeProvider theme={props.theme}>{props.children}</ThemeProvider>;
+  // Start with default theme as baseline and overwrite with custom theme object
+  const modifiedTheme = { ...defaultTheme, ...props.theme };
+
+  return <ThemeProvider theme={modifiedTheme}>{props.children}</ThemeProvider>;
 };
 
 export default ThemeContext;
