@@ -4,11 +4,10 @@ import styled, { css } from 'styled-components';
 import '../../../styles/main.scss';
 
 export interface ICardProps {
-  label: string;
   children: React.ReactNode;
 }
 
-const Card: React.FC<ICardProps> = ({ label, children }) => {
+const Card: React.FC<ICardProps> = ({ children }) => {
   return <NectarCard>{children}</NectarCard>;
 };
 

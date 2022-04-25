@@ -20,7 +20,7 @@ const Template: ComponentStory<typeof Button> = (args) => (
       <div>
         <Grid direction={Direction.down}>
           {['One', 'Two', 'Three', 'Four', 'Five'].map((i) => (
-            <Card label="">
+            <Card>
               <Header1>{i}</Header1>
             </Card>
           ))}
@@ -28,7 +28,7 @@ const Template: ComponentStory<typeof Button> = (args) => (
       </div>
       <Grid direction={Direction.right}>
         {['One', 'Two', 'Three', 'Four', 'Five'].map((i) => (
-          <Card label="">
+          <Card>
             <VContainer>
               <Header1 pb={0.5}>This is a card</Header1>
               <Body1 pb={0.5}>

@@ -13,7 +13,7 @@ export default {
 
 const Template: ComponentStory<typeof Card> = (args) => (
   <ThemeContext theme={defaultTheme}>
-    <Card label="e">
+    <Card>
       <Header1>Hello Card</Header1>
       <Body1>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
