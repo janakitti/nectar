@@ -3,6 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Button from './Button';
 import { Level } from '../../shared/PropTypes';
 import ThemeContext from '../Utility/ThemeContext';
+import { defaultTheme } from '../../theme/theme';
 
 export default {
   title: 'Nectar/Forms/Button',
@@ -10,13 +11,7 @@ export default {
 } as ComponentMeta<typeof Button>;
 
 const Template: ComponentStory<typeof Button> = (args) => (
-  <ThemeContext
-    theme={{
-      colors: {
-        primary0: '#00ff00',
-      },
-    }}
-  >
+  <ThemeContext theme={defaultTheme}>
     <Button {...args} />
   </ThemeContext>
 );
