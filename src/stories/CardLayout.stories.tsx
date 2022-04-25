@@ -8,6 +8,8 @@ import Card from '../components/Containers/Card/Card';
 import Header1 from '../components/Copy/Header1';
 import VContainer from '../components/Structures/VContainer';
 import Body1 from '../components/Copy/Body1';
+import { ThemeContext } from '../components';
+import { defaultTheme } from '../theme/theme';
 
 export default {
   title: 'Nectar/Composites/CardLayout',
@@ -15,7 +17,7 @@ export default {
 } as ComponentMeta<typeof Button>;
 
 const Template: ComponentStory<typeof Button> = (args) => (
-  <div>
+  <ThemeContext theme={defaultTheme}>
     <VSplit fLeft={10}>
       <div>
         <Grid direction={Direction.down}>
@@ -51,17 +53,7 @@ const Template: ComponentStory<typeof Button> = (args) => (
         ))}
       </Grid>
     </VSplit>
-  </div>
+  </ThemeContext>
 );
 
-export const ButtonPrimary = Template.bind({});
-ButtonPrimary.args = {
-  label: 'Primary',
-  type: Level.primary,
-};
-
-export const ButtonSecondary = Template.bind({});
-ButtonSecondary.args = {
-  label: 'Secondary',
-  type: Level.secondary,
-};
+export const Layout1 = Template.bind({});

@@ -9,6 +9,8 @@ import Header1 from '../components/Copy/Header1';
 import TextField from '../components/Forms/TextField';
 import TextArea from '../components/Forms/TextArea';
 import VContainer from '../components/Structures/VContainer';
+import { ThemeContext } from '../components';
+import { defaultTheme } from '../theme/theme';
 
 export default {
   title: 'Nectar/Composites/Forms1',
@@ -16,20 +18,21 @@ export default {
 } as ComponentMeta<typeof Button>;
 
 const Template: ComponentStory<typeof Button> = (args) => (
-  <div style={{ height: '100vh' }}>
-    <VSplit fLeft={10}>
-      <div style={{ backgroundColor: '#eeeeee' }}></div>
-      <VSplit fRight={10}>
-        <VContainer>
-          <Header1 pb={1}>Form</Header1>
-          <TextField type="text" label="" placeholder="Enter text" pb={1}></TextField>
-          <TextArea placeholder="Enter body"></TextArea>
-        </VContainer>
+  <ThemeContext theme={defaultTheme}>
+    <div style={{ height: '100vh' }}>
+      <VSplit fLeft={10}>
         <div style={{ backgroundColor: '#eeeeee' }}></div>
+        <VSplit fRight={10}>
+          <VContainer>
+            <Header1 pb={1}>Form</Header1>
+            <TextField type="text" label="" placeholder="Enter text" pb={1}></TextField>
+            <TextArea placeholder="Enter body"></TextArea>
+          </VContainer>
+          <div style={{ backgroundColor: '#eeeeee' }}></div>
+        </VSplit>
       </VSplit>
-    </VSplit>
-  </div>
+    </div>
+  </ThemeContext>
 );
 
 export const Composition = Template.bind({});
-Composition.args = {};
