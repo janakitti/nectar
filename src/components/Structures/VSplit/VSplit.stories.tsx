@@ -11,8 +11,12 @@ export default {
 const Template: ComponentStory<typeof VSplit> = (args) => (
   <div style={{ height: '100vh' }}>
     <VSplit {...args}>
-      <Header1>Left Section</Header1>
-      <Header1>Right Section</Header1>
+      <div style={{ backgroundColor: 'red' }}>
+        <Header1>Left Section</Header1>
+      </div>
+      <div style={{ backgroundColor: 'blue' }}>
+        <Header1>Right Section</Header1>
+      </div>
     </VSplit>
   </div>
 );
