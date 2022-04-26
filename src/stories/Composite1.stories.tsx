@@ -23,21 +23,21 @@ const Template: ComponentStory<typeof Button> = (args) => (
     <div style={{ height: '100vh' }}>
       <VSplit fLeft={25}>
         <div style={{ backgroundColor: '#eeeeee' }}>
-          <HSplit fLeft={10}>
-            <VContainer>
+          <HSplit fTop={10}>
+            <VContainer alignItems="center" justifyContent="center">
               <Header1>Nectar</Header1>
             </VContainer>
-            <VContainer>
-              <Card width={20} pb={2}>
+            <VContainer alignItems="center">
+              <Card pb={2} pl={1} pr={1}>
                 <Header1>Card 1</Header1>
               </Card>
-              <Card width={20} pb={2}>
+              <Card pb={2} pl={1} pr={1}>
                 <Header1>Card 1</Header1>
               </Card>
-              <Card width={20} pb={2}>
+              <Card pb={2} pl={1} pr={1}>
                 <Header1>Card 1</Header1>
               </Card>
-              <Card width={20} pb={2}>
+              <Card pb={2} pl={1} pr={1}>
                 <Header1>Card 1</Header1>
               </Card>
             </VContainer>
