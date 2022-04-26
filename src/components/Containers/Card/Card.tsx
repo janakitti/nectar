@@ -2,18 +2,25 @@ import React from 'react';
 
 import styled, { css } from 'styled-components';
 import '../../../styles/main.scss';
+import Paddable from '../../Structures/Paddable';
 
 export interface ICardProps {
   children: React.ReactNode;
   width?: number;
   height?: number;
+  pt?: number;
+  pr?: number;
+  pb?: number;
+  pl?: number;
 }
 
 const Card: React.FC<ICardProps> = (props) => {
   return (
-    <NectarCard width={props.width} height={props.height}>
-      {props.children}
-    </NectarCard>
+    <Paddable top={props.pt} right={props.pr} bottom={props.pb} left={props.pl}>
+      <NectarCard width={props.width} height={props.height}>
+        {props.children}
+      </NectarCard>
+    </Paddable>
   );
 };
 
