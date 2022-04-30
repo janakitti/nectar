@@ -23,11 +23,11 @@ const Template: ComponentStory<typeof Button> = (args) => (
     <div style={{ height: '100vh' }}>
       <VSplit fLeft={15}>
         <div style={{ backgroundColor: '#eeeeee' }}>
-          <HSplit fTop={10}>
+          <HSplit fTop={10} px={1} py={1}>
             <VContainer alignItems="center" justifyContent="center">
               <Header1>Nectar</Header1>
             </VContainer>
-            <VContainer alignItems="center" px={1} py={1} gap={1}>
+            <VContainer alignItems="center" gap={1}>
               <Card>
                 <Header1>Card 1</Header1>
               </Card>
@@ -44,11 +44,16 @@ const Template: ComponentStory<typeof Button> = (args) => (
           </HSplit>
         </div>
         <VSplit fRight={10}>
-          <VContainer px={1} py={1}>
-            <Header1 pb={1}>Form</Header1>
-            <TextField type="text" label="" placeholder="Enter text" pb={1}></TextField>
-            <TextArea placeholder="Enter body"></TextArea>
-          </VContainer>
+          <HSplit fTop={10} px={1} py={1}>
+            <VContainer alignItems="left" justifyContent="center">
+              <Header1>Form</Header1>
+            </VContainer>
+            <VContainer>
+              <TextField type="text" label="" placeholder="Enter text" pb={1}></TextField>
+              <TextArea placeholder="Enter body"></TextArea>
+            </VContainer>
+          </HSplit>
+
           <div style={{ backgroundColor: '#eeeeee' }}></div>
         </VSplit>
       </VSplit>
