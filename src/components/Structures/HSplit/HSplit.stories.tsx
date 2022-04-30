@@ -23,5 +23,5 @@ const Template: ComponentStory<typeof HSplit> = (args) => (
 
 export const HSplit1 = Template.bind({});
 HSplit1.args = {
-  fLeft: 10,
+  fTop: 10,
 };

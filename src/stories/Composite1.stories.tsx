@@ -21,30 +21,30 @@ export default {
 const Template: ComponentStory<typeof Button> = (args) => (
   <ThemeContext theme={defaultTheme}>
     <div style={{ height: '100vh' }}>
-      <VSplit fLeft={25}>
+      <VSplit fLeft={15}>
         <div style={{ backgroundColor: '#eeeeee' }}>
           <HSplit fTop={10}>
             <VContainer alignItems="center" justifyContent="center">
               <Header1>Nectar</Header1>
             </VContainer>
-            <VContainer alignItems="center">
-              <Card pb={2} pl={1} pr={1}>
+            <VContainer alignItems="center" px={1} py={1} gap={1}>
+              <Card>
                 <Header1>Card 1</Header1>
               </Card>
-              <Card pb={2} pl={1} pr={1}>
+              <Card>
                 <Header1>Card 1</Header1>
               </Card>
-              <Card pb={2} pl={1} pr={1}>
+              <Card>
                 <Header1>Card 1</Header1>
               </Card>
-              <Card pb={2} pl={1} pr={1}>
+              <Card>
                 <Header1>Card 1</Header1>
               </Card>
             </VContainer>
           </HSplit>
         </div>
         <VSplit fRight={10}>
-          <VContainer>
+          <VContainer px={1} py={1}>
             <Header1 pb={1}>Form</Header1>
             <TextField type="text" label="" placeholder="Enter text" pb={1}></TextField>
             <TextArea placeholder="Enter body"></TextArea>

@@ -37,8 +37,8 @@ const NectarCard = styled.div<{
   pl?: number;
 }>(
   ({ theme: { colors, containers }, width, height, pt, pr, pb, pl }) => css`
-    width: calc(100% - 2 * ${containers?.padding}em);
-    height: ${height}em;
+    height: ${height ? `${height}em` : 'auto'}};
+    width: ${width ? `${width}em` : `auto`}};
     border-radius: ${containers?.borderRadius}em;
     background-color: ${colors?.light0};
     box-shadow: ${containers?.dropShadow?.hOffset}px ${containers?.dropShadow?.vOffset}px
